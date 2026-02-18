@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Premium Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-sparkles"></i>
+                    <span>ChatBot</span>
+                </div>
+                <button class="new-chat-btn" id="newChatBtn">
+                    <i class="fas fa-plus"></i>
+                    New Chat
+                </button>
+            </div>
+            
+            <div class="chat-history">
+                <div class="history-title">Recent Chats</div>
+                <div class="history-list" id="historyList">
+                    <!-- Chat history items will appear here -->
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Premium User</span>
+                        <span class="user-plan">Pro Plan</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="main-chat">
+            <div class="chat-header">
+                <div class="header-info">
+                    <h2>AI Assistant <span class="status-badge">Active</span></h2>
+                    <p>Powered by Gemini Pro</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="icon-btn" id="settingsBtn">
+                        <i class="fas fa-sliders-h"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <div class="welcome-icon">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <h1>How can I help you today?</h1>
+                    <p>Ask me anything, I'm here to assist you</p>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Type your message here..."
+                        rows="3"
+                    ></textarea>
+                    <button class="send-btn" id="sendBtn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span class="ai-model">Gemini Pro • Advanced AI</span>
+                    <span class="typing-indicator" id="typingIndicator"></span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
