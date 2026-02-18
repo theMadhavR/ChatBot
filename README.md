@@ -32,5 +32,5 @@
 
 1. **Clone or download the project**
    ```bash
-   git clone [<https://github.com/theMadhavR/ChatBot.git>]
+   git clone https://github.com/theMadhavR/ChatBot.git
    cd ChatBot
